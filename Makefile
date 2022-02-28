@@ -1,4 +1,4 @@
-a.out : variables.cpp
+a.out : structure.cpp
 	g++ -o $@ $<
 
 run : 
