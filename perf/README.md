@@ -15,3 +15,16 @@ $ ./a.out
 ```
 $ gprof a.out gmon.out
 ```
+
+## perf
+
+- preparation
+```
+$ sudo apt install linux-tools-`uname -r`
+```
+
+- analyze 
+```
+$ sudo perf record -- ./a.out
+$ sudo perf report
+```
