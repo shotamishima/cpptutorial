@@ -26,8 +26,8 @@ class ProcessingTime {
                 return;
             }
             const auto end = std::chrono::system_clock::now();
-            const auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end - m_start).count();
-            std::cout << elapsed << std::endl;
+            const auto elapsed = std::chrono::duration_cast<std::chrono::microseconds>(end - m_start).count();
+            std::cout << elapsed << "[micro seconds]" << std::endl;
 
             m_isActive = false;
         }
